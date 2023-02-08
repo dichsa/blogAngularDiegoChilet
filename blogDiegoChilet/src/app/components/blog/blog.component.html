@@ -1,0 +1,26 @@
+<main>
+  <h1>Página de noticias de Diego</h1>
+  <form>
+    <div>
+      <label for="titulo">Introduce el titulo </label>
+      <input type="text" id="titulo" [(ngModel)]="titulo" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div>
+      <label for="imagen">Introduce la imagen </label>
+      <input type="text" id="imagen" [(ngModel)]="imagen" [ngModelOptions]="{standalone: true}" style="width: 100px">
+    </div>
+    <div>
+      <label for="cuerpo">Introduce el cuerpo </label>
+      <input type="text" id="cuerpo" [(ngModel)]="cuerpo" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div>
+      <label for="fecha">Introduce la fecha </label>
+      <input type="date" id="fecha" [(ngModel)]="fecha" [ngModelOptions]="{standalone: true}">
+    </div>
+    <button (click)="guardar()">Guardar</button>
+  </form>
+  <section>
+    <h2>Lista de noticias</h2>
+    <p [innerHTML]="blogContent" class="infoNoticia"></p>
+  </section>
+</main>

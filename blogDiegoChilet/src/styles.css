@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+img {
+    width: 300px;
+}
+
+li {
+    list-style: none;
+}
+
+.tituloNoticia {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cuerpoNoticia {
+    font-size: 20px;
+}
